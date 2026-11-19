@@ -3,6 +3,8 @@
 
 # claude-swap
 
+Personal fork: current upstream with optional Remote Control / Artifacts pinning from PR 210. See [installation and operation](docs/personal-fork.md).
+
 Multi-account switcher for Claude Code. Easily switch between multiple Claude accounts without logging out, or let it switch for you before you hit a rate limit. Track usage for every account in a live dashboard, and run accounts in parallel. Works with both the Claude Code CLI and the VS Code extension.
 
 ## Installation

@@ -3976,9 +3976,9 @@ class TestTheExtraIsGatedByOneFloorOnly:
         specs = raw["project"]["optional-dependencies"]["pin"]
         assert len(specs) == 1, f"expected one pin requirement, got {specs!r}"
 
-        m = re.fullmatch(r"cswap-pin>=(\d+(?:\.\d+)*)", specs[0])
+        m = re.fullmatch(r"cswap-pin(?:>=|==)(\d+(?:\.\d+)*)", specs[0])
         assert m, (
-            f"the pin extra must name a `>=` floor on cswap-pin, got "
+            f"the pin extra must name a minimum or exact cswap-pin version, got "
             f"{specs[0]!r}. The floor is what forces the relock that moves "
             f"the pinned version; without it the lock silently keeps an old "
             f"one (measured: 0.1.37, thirty-one releases behind)."

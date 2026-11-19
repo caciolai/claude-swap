@@ -1,5 +1,5 @@
 version = 1
-revision = 5
+revision = 3
 requires-python = ">=3.12"
 
 [[package]]
@@ -89,7 +89,7 @@ wheels = [
 
 [[package]]
 name = "claude-swap"
-version = "1.2.0b1"
+version = "1.2.0b1+caciolai.1"
 source = { editable = "." }
 dependencies = [
     { name = "textual" },
@@ -114,7 +114,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "cswap-pin", marker = "extra == 'pin'", specifier = ">=0.1.309" },
+    { name = "cswap-pin", marker = "extra == 'pin'", specifier = "==0.1.338" },
     { name = "rumps", marker = "extra == 'menubar'", specifier = ">=0.4.0" },
     { name = "textual", specifier = ">=8.2.8,<9" },
     { name = "truststore", specifier = ">=0.10.4" },
@@ -190,14 +190,14 @@ wheels = [
 
 [[package]]
 name = "cswap-pin"
-version = "0.1.309"
+version = "0.1.338"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cryptography" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a5/72/ce75184b405480fd77bb2cc0a7ea51a75862dba22bb55c8f621cc28633b6/cswap_pin-0.1.309.tar.gz", hash = "sha256:6535de017812d22449f7df79e99576af779de06a00d6cce5c2369b2e886defc5", size = 1077630, upload-time = "2026-10-02T20:18:01.033Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/df/3c/ca07aa5bb30cb7fff33522295d9bd12f9bfda30653d0ef2971611f0798a7/cswap_pin-0.1.338.tar.gz", hash = "sha256:3688d4e48cb7168cf3aff2c077a552a2e2a7acfb3ba9ef8a013ccc5dcb8e077e", size = 1205227, upload-time = "2026-10-11T21:36:59.964Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/cd/5c/312e73ee1ee9e53c5a8c68121ca232851e161448fcca9d36a18a0c8ddf87/cswap_pin-0.1.309-py3-none-any.whl", hash = "sha256:ab1db189a22f103ead2fab5abaaec1ce1203939642bfe691c9842bd1d1dcc5d8", size = 406729, upload-time = "2026-10-02T20:17:59.552Z" },
+    { url = "https://files.pythonhosted.org/packages/1b/7f/088d65897bbce82bbb1f192c26ec85293efff76c93a3ce988129023e21d5/cswap_pin-0.1.338-py3-none-any.whl", hash = "sha256:c68713c368cf1552d257cbfa0a6851174fc1b4b9e22003a1205e6c1deb5717bc", size = 446677, upload-time = "2026-10-11T21:36:58.231Z" },
 ]
 
 [[package]]
